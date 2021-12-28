@@ -1,4 +1,4 @@
-import { Flex, useBoolean } from "@chakra-ui/react";
+import { Box, Flex, useBoolean } from "@chakra-ui/react";
 import NavbarLogo from "./NavbarLogo";
 import NavbarMenuToggle from "./NavbarMenuToggle";
 import NavbarMenuLinks from "./NavbarMenuLinks";
@@ -17,12 +17,12 @@ export default function Navbar() {
             <Flex
                 as="nav"
                 align="center"
-                justify="space-between"
+                justify={["flex-start", null, "center"]}
                 wrap="wrap"
                 maxW={"1200px"}
                 w={"100%"}
+                minH={14}
             >
-                <NavbarLogo />
                 <NavbarMenuToggle toggle={setIsOpen.toggle} isOpen={isOpen} />
                 <NavbarMenuLinks isOpen={isOpen} />
             </Flex>

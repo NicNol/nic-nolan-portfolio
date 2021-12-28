@@ -10,9 +10,8 @@ interface NavbarMenuItemProps {
 export default function MenuItem({ children, to = "/" }: NavbarMenuItemProps) {
     return (
         <NextLink href={to} passHref>
-            <Link>
+            <Link px={4}>
                 <Text
-                    display="block"
                     bgGradient={[
                         "linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%)",
                         null,

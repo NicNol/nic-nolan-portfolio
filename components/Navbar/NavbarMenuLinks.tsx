@@ -1,5 +1,11 @@
 import React from "react";
-import { Box, Stack, Collapse, useBreakpointValue } from "@chakra-ui/react";
+import {
+    Stack,
+    StackDivider,
+    Collapse,
+    useBreakpointValue,
+    Flex,
+} from "@chakra-ui/react";
 import MenuItem from "./NavbarMenuItem";
 
 interface NavbarMenuLinksProps {
@@ -14,23 +20,25 @@ export default function NavbarMenuLinks({ isOpen }: NavbarMenuLinksProps) {
     });
 
     return (
-        <Box
+        <Flex
             flexBasis={{ base: "100%", md: "auto" }}
             bg={["#333", null, "none"]}
+            h={["inherit", null, 10]}
+            justifyContent={"center"}
         >
             <Collapse in={isOpen} startingHeight={menuHeight}>
                 <Stack
-                    spacing={8}
-                    align="center"
-                    justify={["center", "center", "flex-end", "flex-end"]}
+                    justify={"center"}
                     direction={["column", "column", "row", "row"]}
-                    py={[4, 4, 0, 0]}
                     px={4}
+                    align={"center"}
                 >
                     <MenuItem to="/">Home</MenuItem>
-                    <MenuItem to="/how">How It Works</MenuItem>
+                    <MenuItem to="/">About</MenuItem>
+                    <MenuItem to="/">Portfolio</MenuItem>
+                    <MenuItem to="/">Resume</MenuItem>
                 </Stack>
             </Collapse>
-        </Box>
+        </Flex>
     );
 }
