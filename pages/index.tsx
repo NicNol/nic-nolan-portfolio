@@ -52,6 +52,8 @@ const Home: NextPage = () => {
                         direction={"column"}
                         h={"300px"}
                         justifyContent={"center"}
+                        cursor={"default"}
+                        userSelect={"none"}
                     >
                         <Heading color={"#222"} size={"xl"}>
                             Hello!
@@ -74,13 +76,19 @@ const Home: NextPage = () => {
                             and I am a
                         </Heading>
                         <Heading
+                            transition={"1s"}
                             backgroundImage={
                                 "linear-gradient(to left, #4481eb 0%, #04befe 100%)"
                             }
-                            backgroundPosition={"left bottom"}
+                            backgroundPosition={"center bottom"}
                             backgroundRepeat={"no-repeat"}
                             backgroundSize={"100% 10%"}
                             display={"inline-block"}
+                            _hover={{
+                                backgroundSize: "100% 100%",
+                                color: "white",
+                                textShadow: "1px 1px #333",
+                            }}
                         >
                             Software Developer.
                         </Heading>

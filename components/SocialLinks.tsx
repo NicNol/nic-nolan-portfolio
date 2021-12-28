@@ -14,8 +14,8 @@ export default function SocialLinks() {
             alignItems={"flex-start"}
             height={"100%"}
         >
-            <NextLink href="/">
-                <Link opacity={"50%"} _hover={{ opacity: "60%" }}>
+            <NextLink href="https://github.com/NicNol" passHref>
+                <Link opacity={"50%"} _hover={{ opacity: "60%" }} isExternal>
                     <Image
                         alt="GitHub Brand Logo"
                         src={GitHub}
@@ -24,8 +24,8 @@ export default function SocialLinks() {
                     />
                 </Link>
             </NextLink>
-            <NextLink href="/">
-                <Link opacity={"40%"} _hover={{ opacity: "50%" }}>
+            <NextLink href="https://www.linkedin.com/in/nicnolan/" passHref>
+                <Link opacity={"40%"} _hover={{ opacity: "50%" }} isExternal>
                     <Image
                         alt="LinkedIn Brand Logo"
                         src={LinkedIn}

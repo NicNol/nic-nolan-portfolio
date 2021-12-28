@@ -6,24 +6,28 @@ import FooterNavLink from "./FooterNavLink";
 export default function Footer() {
     return (
         <Flex direction={"column"} w={"100%"}>
-            <Flex
-                wrap={"wrap"}
-                color={"#333333cc"}
-                justifyContent={"center"}
-                my={16}
-            >
-                <FooterNavStack>
-                    <FooterNavHeader>Social</FooterNavHeader>
-                    <FooterNavLink>GitHub</FooterNavLink>
-                    <FooterNavLink>LinkedIn</FooterNavLink>
-                </FooterNavStack>
-                <FooterNavStack>
-                    <FooterNavHeader>Projects</FooterNavHeader>
-                    <FooterNavLink>Course Analytics</FooterNavLink>
-                    <FooterNavLink>Boeing Speckle</FooterNavLink>
-                    <FooterNavLink>Fource</FooterNavLink>
-                    <FooterNavLink>String Primatives</FooterNavLink>
-                </FooterNavStack>
+            <Flex color={"#333333cc"} justifyContent={"center"} my={16} px={8}>
+                <Flex justifyContent={"flex-start"} wrap={"wrap"}>
+                    <FooterNavStack>
+                        <FooterNavHeader>Navigation</FooterNavHeader>
+                        <FooterNavLink>Home</FooterNavLink>
+                        <FooterNavLink>About</FooterNavLink>
+                        <FooterNavLink>Portfolio</FooterNavLink>
+                        <FooterNavLink>Resume</FooterNavLink>
+                    </FooterNavStack>
+                    <FooterNavStack>
+                        <FooterNavHeader>Projects</FooterNavHeader>
+                        <FooterNavLink>Course Analytics</FooterNavLink>
+                        <FooterNavLink>Boeing Speckle</FooterNavLink>
+                        <FooterNavLink>Fource</FooterNavLink>
+                        <FooterNavLink>String Primatives</FooterNavLink>
+                    </FooterNavStack>
+                    <FooterNavStack>
+                        <FooterNavHeader>Social</FooterNavHeader>
+                        <FooterNavLink>GitHub</FooterNavLink>
+                        <FooterNavLink>LinkedIn</FooterNavLink>
+                    </FooterNavStack>
+                </Flex>
             </Flex>
 
             <Box
