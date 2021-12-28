@@ -20,6 +20,12 @@ export default function MenuItem({ children, to = "/" }: NavbarMenuItemProps) {
                     ]}
                     bgClip={["text", null, "border-box"]}
                     color={["transparent", null, "#333333CC"]}
+                    textShadow={[
+                        "1px 1px 5px rgba(1,1,1,0.2)",
+                        null,
+                        "1px 1px 2px rgba(0,0,0,0.2)",
+                    ]}
+                    fontSize="2xl"
                 >
                     {children}
                 </Text>

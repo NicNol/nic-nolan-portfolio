@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack, Collapse } from "@chakra-ui/react";
+import { Box, Stack, Collapse, useBreakpointValue } from "@chakra-ui/react";
 import MenuItem from "./NavbarMenuItem";
 
 interface NavbarMenuLinksProps {
@@ -7,13 +7,18 @@ interface NavbarMenuLinksProps {
 }
 
 export default function NavbarMenuLinks({ isOpen }: NavbarMenuLinksProps) {
+    const menuHeight = useBreakpointValue({
+        base: 0,
+        sm: 0,
+        md: "100%",
+    });
+
     return (
         <Box
             flexBasis={{ base: "100%", md: "auto" }}
             bg={["#333", null, "none"]}
-            height={[isOpen ? "auto" : "0", null, "auto"]}
         >
-            <Collapse in={isOpen} startingHeight={"100%"}>
+            <Collapse in={isOpen} startingHeight={menuHeight}>
                 <Stack
                     spacing={8}
                     align="center"
