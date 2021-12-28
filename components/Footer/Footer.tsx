@@ -1,4 +1,4 @@
-import { Box, Flex, Link, Heading, Stack } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import FooterNavStack from "./FooterNavStack";
 import FooterNavHeader from "./FooterNavHeader";
 import FooterNavLink from "./FooterNavLink";
@@ -16,13 +16,13 @@ export default function Footer() {
                     <FooterNavHeader>Social</FooterNavHeader>
                     <FooterNavLink>GitHub</FooterNavLink>
                     <FooterNavLink>LinkedIn</FooterNavLink>
-                    <FooterNavLink>Twitter</FooterNavLink>
                 </FooterNavStack>
                 <FooterNavStack>
                     <FooterNavHeader>Projects</FooterNavHeader>
                     <FooterNavLink>Course Analytics</FooterNavLink>
                     <FooterNavLink>Boeing Speckle</FooterNavLink>
                     <FooterNavLink>Fource</FooterNavLink>
+                    <FooterNavLink>String Primatives</FooterNavLink>
                 </FooterNavStack>
             </Flex>
 

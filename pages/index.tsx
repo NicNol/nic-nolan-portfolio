@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import PageWrapper from "../components/PageWrapper";
-import { Flex } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 
 const Home: NextPage = () => {
     return (
@@ -23,7 +23,40 @@ const Home: NextPage = () => {
                     content="width=device-width, initial-scale=1.0"
                 />
             </Head>
-            <PageWrapper>Hello!</PageWrapper>
+            <PageWrapper>
+                <Box px={8}>
+                    <Heading color={"#222"} size={"xl"}>
+                        Hello!
+                    </Heading>
+                    <Heading fontWeight={"300"} color={"#222"} size={"lg"}>
+                        My name is
+                    </Heading>
+                    <Heading
+                        bgGradient={
+                            "linear-gradient(to top, #4481eb 0%, #04befe 100%)"
+                        }
+                        bgClip={"text"}
+                        display={"block"}
+                        size={"4xl"}
+                        fontWeight={"700"}
+                    >
+                        Nic Nolan
+                    </Heading>
+                    <Heading fontWeight={"300"} color={"#222"} size={"lg"}>
+                        and I am a
+                    </Heading>
+                    <Heading
+                        backgroundImage={
+                            "linear-gradient(to left, #4481eb 0%, #04befe 100%)"
+                        }
+                        backgroundPosition={"left bottom"}
+                        backgroundRepeat={"no-repeat"}
+                        backgroundSize={"75% 10%"}
+                    >
+                        Software Developer.
+                    </Heading>
+                </Box>
+            </PageWrapper>
         </>
     );
 };
