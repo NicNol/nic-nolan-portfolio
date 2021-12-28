@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import PageWrapper from "../components/PageWrapper";
+import { Flex } from "@chakra-ui/react";
 
 const Home: NextPage = () => {
     return (

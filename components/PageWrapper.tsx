@@ -1,6 +1,6 @@
 import { Center, Flex } from "@chakra-ui/react";
 import Navbar from "./Navbar/Navbar";
-import Footer from "./Footer";
+import Footer from "./Footer/Footer";
 
 export default function PageWrapper({ children }: any) {
     return (
