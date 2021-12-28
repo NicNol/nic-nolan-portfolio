@@ -1,7 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
+import profilePic from "../public/images/nic.jpg";
 import PageWrapper from "../components/PageWrapper";
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Center, Flex, Heading } from "@chakra-ui/react";
 
 const Home: NextPage = () => {
     return (
@@ -24,38 +26,65 @@ const Home: NextPage = () => {
                 />
             </Head>
             <PageWrapper>
-                <Box px={8}>
-                    <Heading color={"#222"} size={"xl"}>
-                        Hello!
-                    </Heading>
-                    <Heading fontWeight={"300"} color={"#222"} size={"lg"}>
-                        My name is
-                    </Heading>
-                    <Heading
-                        bgGradient={
-                            "linear-gradient(to top, #4481eb 0%, #04befe 100%)"
-                        }
-                        bgClip={"text"}
-                        display={"block"}
-                        size={"4xl"}
-                        fontWeight={"700"}
+                <Flex
+                    wrap={"wrap"}
+                    justifyContent={"center"}
+                    mt={[16, 32, 48]}
+                    gap={8}
+                >
+                    <Box
+                        borderRadius={"75px"}
+                        overflow={"hidden"}
+                        width={"300px"}
+                        height={"300px"}
+                        boxShadow={"2xl"}
                     >
-                        Nic Nolan
-                    </Heading>
-                    <Heading fontWeight={"300"} color={"#222"} size={"lg"}>
-                        and I am a
-                    </Heading>
-                    <Heading
-                        backgroundImage={
-                            "linear-gradient(to left, #4481eb 0%, #04befe 100%)"
-                        }
-                        backgroundPosition={"left bottom"}
-                        backgroundRepeat={"no-repeat"}
-                        backgroundSize={"75% 10%"}
+                        <Image
+                            src={profilePic}
+                            alt="Picture of Nic Nolan"
+                            priority
+                            width={"300px"}
+                            height={"300px"}
+                        />
+                    </Box>
+                    <Flex
+                        direction={"column"}
+                        h={"300px"}
+                        justifyContent={"center"}
                     >
-                        Software Developer.
-                    </Heading>
-                </Box>
+                        <Heading color={"#222"} size={"xl"}>
+                            Hello!
+                        </Heading>
+                        <Heading fontWeight={"300"} color={"#222"} size={"lg"}>
+                            My name is
+                        </Heading>
+                        <Heading
+                            bgGradient={
+                                "linear-gradient(to top, #4481eb 0%, #04befe 100%)"
+                            }
+                            bgClip={"text"}
+                            display={"block"}
+                            size={"4xl"}
+                            fontWeight={"700"}
+                        >
+                            Nic Nolan
+                        </Heading>
+                        <Heading fontWeight={"300"} color={"#222"} size={"lg"}>
+                            and I am a
+                        </Heading>
+                        <Heading
+                            backgroundImage={
+                                "linear-gradient(to left, #4481eb 0%, #04befe 100%)"
+                            }
+                            backgroundPosition={"left bottom"}
+                            backgroundRepeat={"no-repeat"}
+                            backgroundSize={"100% 10%"}
+                            display={"inline-block"}
+                        >
+                            Software Developer.
+                        </Heading>
+                    </Flex>
+                </Flex>
             </PageWrapper>
         </>
     );
