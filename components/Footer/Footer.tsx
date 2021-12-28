@@ -24,8 +24,17 @@ export default function Footer() {
                     </FooterNavStack>
                     <FooterNavStack>
                         <FooterNavHeader>Social</FooterNavHeader>
-                        <FooterNavLink>GitHub</FooterNavLink>
-                        <FooterNavLink>LinkedIn</FooterNavLink>
+                        <FooterNavLink to={"https://github.com/NicNol"}>
+                            GitHub
+                        </FooterNavLink>
+                        <FooterNavLink
+                            to={"https://www.linkedin.com/in/nicnolan/"}
+                        >
+                            LinkedIn
+                        </FooterNavLink>
+                        <FooterNavLink to={"mailto:nicnolan@live.com"}>
+                            Email
+                        </FooterNavLink>
                     </FooterNavStack>
                 </Flex>
             </Flex>
