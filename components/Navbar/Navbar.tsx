@@ -13,6 +13,7 @@ export default function Navbar() {
             boxShadow={"md"}
             w={"100%"}
             zIndex={"100"}
+            mb={4}
         >
             <Flex
                 as="nav"

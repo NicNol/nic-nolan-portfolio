@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Text } from "@chakra-ui/react";
 import { default as NextLink } from "next/link";
+import { relative } from "path/posix";
 
 interface NavbarMenuItemProps {
     children: any;
@@ -10,7 +11,17 @@ interface NavbarMenuItemProps {
 export default function MenuItem({ children, to = "/" }: NavbarMenuItemProps) {
     return (
         <NextLink href={to} passHref>
-            <Link px={4}>
+            <Link
+                transition={"font-weight .2s"}
+                px={4}
+                _focus={{ outline: "none" }}
+                _hover={{
+                    textDecoration: "none",
+                    fontWeight: "bold",
+                }}
+                w={36}
+                textAlign={"center"}
+            >
                 <Text
                     bgGradient={[
                         "linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%)",

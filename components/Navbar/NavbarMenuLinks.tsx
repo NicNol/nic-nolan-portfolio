@@ -31,6 +31,7 @@ export default function NavbarMenuLinks({ isOpen }: NavbarMenuLinksProps) {
                     justify={"center"}
                     direction={["column", "column", "row", "row"]}
                     px={4}
+                    py={[3, 3, 0, 0]}
                     align={"center"}
                 >
                     <MenuItem to="/">Home</MenuItem>
