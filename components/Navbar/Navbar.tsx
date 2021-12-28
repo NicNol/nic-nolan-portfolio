@@ -18,11 +18,10 @@ export default function Navbar() {
             />
             <Flex justifyContent={"center"}>
                 <Flex
-                    as="nav"
-                    align="center"
-                    justify={["flex-start", null, "center"]}
-                    wrap="wrap"
-                    maxW={"1200px"}
+                    as={"nav"}
+                    align={"center"}
+                    justify={["space-between", null, "center"]}
+                    wrap={"wrap"}
                     w={"100%"}
                     minH={14}
                 >

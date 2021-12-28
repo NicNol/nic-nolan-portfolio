@@ -3,7 +3,8 @@ import Head from "next/head";
 import Image from "next/image";
 import profilePic from "../public/images/nic.jpg";
 import PageWrapper from "../components/PageWrapper";
-import { Box, Center, Flex, Heading } from "@chakra-ui/react";
+import { Box, Flex, Heading } from "@chakra-ui/react";
+import SocialLinks from "../components/SocialLinks";
 
 const Home: NextPage = () => {
     return (
@@ -83,6 +84,7 @@ const Home: NextPage = () => {
                         >
                             Software Developer.
                         </Heading>
+                        <SocialLinks />
                     </Flex>
                 </Flex>
             </PageWrapper>

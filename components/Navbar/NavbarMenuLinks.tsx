@@ -1,11 +1,5 @@
 import React from "react";
-import {
-    Stack,
-    StackDivider,
-    Collapse,
-    useBreakpointValue,
-    Flex,
-} from "@chakra-ui/react";
+import { Stack, Collapse, useBreakpointValue, Flex } from "@chakra-ui/react";
 import MenuItem from "./NavbarMenuItem";
 
 interface NavbarMenuLinksProps {
