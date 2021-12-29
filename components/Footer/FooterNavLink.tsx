@@ -20,6 +20,7 @@ export default function Footer({ children, to = "/" }: any) {
                     backgroundPosition={"left bottom"}
                     backgroundRepeat={"no-repeat"}
                     backgroundSize={"0% 0%"}
+                    isExternal={to[0] != "/"}
                 >
                     {children}
                 </Link>
