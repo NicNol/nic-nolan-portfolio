@@ -51,7 +51,7 @@ const Home: NextPage = () => {
                     <Flex
                         direction={"column"}
                         h={"300px"}
-                        justifyContent={"center"}
+                        justifyContent={"flex-start"}
                         cursor={"default"}
                         userSelect={"none"}
                     >
@@ -90,7 +90,10 @@ const Home: NextPage = () => {
                                 textShadow: "1px 1px #333",
                             }}
                         >
-                            Software Developer.
+                            Software Developer
+                        </Heading>
+                        <Heading fontWeight={"300"} color={"#222"} size={"lg"}>
+                            from Portland, Oregon.
                         </Heading>
                         <SocialLinks />
                     </Flex>
