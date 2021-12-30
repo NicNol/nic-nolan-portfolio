@@ -1,15 +1,19 @@
 import React, { FC } from "react";
 import {
+    background,
     Box,
     Button,
     Center,
     Flex,
     Heading,
+    Link,
     Tag,
     Text,
 } from "@chakra-ui/react";
+import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Image from "next/image";
 import BodyLink from "./BodyLink";
+import { default as NextLink } from "next/link";
 
 interface PortfolioCardProps {
     cardData: CardData;
@@ -52,7 +56,7 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ cardData }) => {
                         width={"100%"}
                         flexGrow={1}
                         backgroundImage={
-                            "linear-gradient(320deg, #9be15d 0%, #00e3ae 100%)"
+                            "linear-gradient(320deg, #9be15d99 0%, #00e3ae99 100%)"
                         }
                     >
                         <Flex height={"100%"} w={"100%"} position={"relative"}>
@@ -93,7 +97,28 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ cardData }) => {
                     </Flex>
 
                     <Flex pb={4} px={6} gap={2}>
-                        <Button>Read More</Button>
+                        <NextLink href={link} passHref>
+                            <Link>
+                                <Button
+                                    backgroundImage={
+                                        "linear-gradient(to left, #9be15d 0%, #00e3ae 100%)"
+                                    }
+                                    backgroundPosition={"bottom center"}
+                                    backgroundRepeat={"no-repeat"}
+                                    backgroundSize={"100% 0%"}
+                                    transition={".3s"}
+                                    _focus={{ outline: "none" }}
+                                    _hover={{
+                                        backgroundSize: "100% 10%",
+                                        backgroundColor: "gray.200",
+                                    }}
+                                    fontWeight={"300"}
+                                    rightIcon={<ArrowForwardIcon />}
+                                >
+                                    View Details
+                                </Button>
+                            </Link>
+                        </NextLink>
                     </Flex>
                 </Flex>
             </Box>
