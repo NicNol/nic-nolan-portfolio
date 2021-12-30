@@ -29,8 +29,8 @@ export default function NavbarMenuLinks({ isOpen }: NavbarMenuLinksProps) {
                     align={"center"}
                 >
                     <MenuItem to="/">Home</MenuItem>
-                    <MenuItem to="/">About</MenuItem>
-                    <MenuItem to="/">Portfolio</MenuItem>
+                    <MenuItem to="/about">About</MenuItem>
+                    <MenuItem to="/portfolio">Portfolio</MenuItem>
                     <MenuItem to="/">Resume</MenuItem>
                 </Stack>
             </Collapse>

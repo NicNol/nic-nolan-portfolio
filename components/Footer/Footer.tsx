@@ -10,9 +10,11 @@ export default function Footer() {
                 <Flex justifyContent={"flex-start"} wrap={"wrap"}>
                     <FooterNavStack>
                         <FooterNavHeader>Navigation</FooterNavHeader>
-                        <FooterNavLink>Home</FooterNavLink>
-                        <FooterNavLink>About</FooterNavLink>
-                        <FooterNavLink>Portfolio</FooterNavLink>
+                        <FooterNavLink to={"/"}>Home</FooterNavLink>
+                        <FooterNavLink to={"/about"}>About</FooterNavLink>
+                        <FooterNavLink to={"/portfolio"}>
+                            Portfolio
+                        </FooterNavLink>
                         <FooterNavLink>Resume</FooterNavLink>
                     </FooterNavStack>
                     <FooterNavStack>

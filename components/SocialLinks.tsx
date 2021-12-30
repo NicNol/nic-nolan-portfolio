@@ -7,18 +7,11 @@ import { IoMail } from "react-icons/io5";
 
 export default function SocialLinks() {
     return (
-        <Flex
-            wrap={"nowrap"}
-            gap={4}
-            px={4}
-            py={4}
-            alignItems={"flex-start"}
-            height={"100%"}
-        >
+        <Flex wrap={"nowrap"} gap={4} pl={2} pt={4} h={"52px"}>
             <NextLink href="https://github.com/NicNol" passHref>
                 <Link
                     opacity={"50%"}
-                    _hover={{ opacity: "60%" }}
+                    _hover={{ opacity: "70%" }}
                     isExternal
                     _focus={{ outline: "none" }}
                 >
@@ -33,7 +26,7 @@ export default function SocialLinks() {
             <NextLink href="https://www.linkedin.com/in/nicnolan/" passHref>
                 <Link
                     opacity={"40%"}
-                    _hover={{ opacity: "50%" }}
+                    _hover={{ opacity: "60%" }}
                     isExternal
                     _focus={{ outline: "none" }}
                 >
@@ -48,7 +41,7 @@ export default function SocialLinks() {
             <NextLink href="mailto:nicnolan@live.com" passHref>
                 <Link
                     opacity={"40%"}
-                    _hover={{ opacity: "50%" }}
+                    _hover={{ opacity: "60%" }}
                     isExternal
                     _focus={{ outline: "none" }}
                 >
