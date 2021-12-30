@@ -22,6 +22,7 @@ const HeroBlock: FC<HeroBlockProps> = ({}) => {
                     priority
                     width={"300px"}
                     height={"300px"}
+                    quality={100}
                 />
             </Box>
             <Flex
@@ -53,7 +54,11 @@ const HeroBlock: FC<HeroBlockProps> = ({}) => {
                 </Heading>
                 <Box>
                     <Heading
+                        px={1}
+                        position={"relative"}
+                        right={1}
                         transition={"1s"}
+                        textShadow={"1px 1px #fff"}
                         backgroundImage={
                             "linear-gradient(to left, #4481eb 0%, #04befe 100%)"
                         }

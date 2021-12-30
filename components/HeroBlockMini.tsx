@@ -43,10 +43,14 @@ const HeroBlockMini: FC<HeroBlockMiniProps> = ({}) => {
                 </Heading>
                 <Box>
                     <Heading
+                        px={1}
+                        position={"relative"}
+                        right={1}
                         transition={"1s"}
                         backgroundImage={
                             "linear-gradient(to left, #4481eb 0%, #04befe 100%)"
                         }
+                        textShadow={"1px 1px #fff"}
                         backgroundPosition={"center bottom"}
                         backgroundRepeat={"no-repeat"}
                         backgroundSize={"100% 10%"}

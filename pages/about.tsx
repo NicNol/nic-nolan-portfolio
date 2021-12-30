@@ -31,6 +31,7 @@ const About: NextPage = () => {
                     direction={"column"}
                     gap={8}
                     px={8}
+                    py={8}
                     fontSize={"xl"}
                     textAlign={"justify"}
                     color={"#222"}

@@ -4,6 +4,7 @@ import HeroBlockMini from "../../components/HeroBlockMini";
 import PageWrapper from "../../components/PageWrapper";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import BodyLink from "../../components/BodyLink";
+import PortfolioCard from "../../components/PortfolioCard";
 
 const Portfolio: NextPage = () => {
     return (
@@ -49,6 +50,7 @@ const Portfolio: NextPage = () => {
                             Porfolio Projects
                         </Heading>
                     </Box>
+                    <PortfolioCard>Hello</PortfolioCard>
                 </Flex>
             </PageWrapper>
         </>
