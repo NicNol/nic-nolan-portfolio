@@ -28,6 +28,7 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ cardData }) => {
     return (
         <Center
             w={"100%"}
+            h={"650px"}
             maxW={"550px"}
             borderRadius={["40px", "50px"]}
             boxShadow={"xl"}
@@ -50,7 +51,7 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ cardData }) => {
                     <Center
                         overflow={"hidden"}
                         width={"100%"}
-                        height={"350px"}
+                        flexGrow={1}
                         backgroundImage={
                             "linear-gradient(to left, #9be15d 0%, #00e3ae 100%)"
                         }
@@ -59,20 +60,20 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ cardData }) => {
                             transition={".5s"}
                             filter={"opacity(75%)"}
                             height={"100%"}
+                            w={"100%"}
                             _hover={{ filter: "opacity(100%)" }}
                         >
                             <Image
                                 src={imageSrc}
-                                alt={title + "preview image"}
-                                width={"550px"}
-                                height={"350px"}
-                                objectFit={"cover"}
-                                objectPosition={"50% 0%"}
+                                alt={`${title} preview image`}
+                                layout={"fill"}
+                                objectFit={"contain"}
+                                objectPosition={"50% 50%"}
                                 quality={100}
                             />
                         </Flex>
                     </Center>
-                    <Flex width={"100%"} px={6} py={1}>
+                    <Flex width={"100%"} px={6} py={4}>
                         <Heading fontSize={"2xl"}>
                             <BodyLink to={link}>{title}</BodyLink>
                         </Heading>
