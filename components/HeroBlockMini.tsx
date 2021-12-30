@@ -26,7 +26,7 @@ const HeroBlockMini: FC<HeroBlockMiniProps> = ({}) => {
             </Box>
             <Flex
                 direction={"column"}
-                justifyContent={"flex-start"}
+                justifyContent={"flex-end"}
                 cursor={"default"}
                 userSelect={"none"}
             >
