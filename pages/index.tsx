@@ -8,7 +8,7 @@ const Home: NextPage = () => {
     return (
         <>
             <Head>
-                <title>Nic Nolan</title>
+                <title>Nic Nolan | Home</title>
                 <meta charSet="UTF-8" />
                 <meta
                     name="keywords"

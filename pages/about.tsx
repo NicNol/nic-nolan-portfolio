@@ -2,15 +2,14 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import HeroBlockMini from "../components/HeroBlockMini";
 import PageWrapper from "../components/PageWrapper";
-
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import BodyLink from "../components/BodyLink";
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
     return (
         <>
             <Head>
-                <title>Nic Nolan</title>
+                <title>Nic Nolan | About</title>
                 <meta charSet="UTF-8" />
                 <meta
                     name="keywords"
@@ -107,7 +106,8 @@ const Home: NextPage = () => {
                     <Text>
                         Outside of school and work, I love to learn and always
                         seem to find myself reading one thing or another. I also
-                        enjoy weight lifting, acoustic guitar, writing, solving{" "}
+                        enjoy weight lifting, acoustic guitar, writing, chess,
+                        solving{" "}
                         <BodyLink
                             to={
                                 "https://www.worldcubeassociation.org/persons/2016NOLA01"
@@ -123,4 +123,4 @@ const Home: NextPage = () => {
     );
 };
 
-export default Home;
+export default About;
