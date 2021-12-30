@@ -5,6 +5,7 @@ import PageWrapper from "../../components/PageWrapper";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import BodyLink from "../../components/BodyLink";
 import PortfolioCard from "../../components/PortfolioCard";
+import porfolioProjects from "../../public/static/portfolioProjects.json";
 
 const Portfolio: NextPage = () => {
     return (
@@ -50,7 +51,20 @@ const Portfolio: NextPage = () => {
                             Porfolio Projects
                         </Heading>
                     </Box>
-                    <PortfolioCard>Hello</PortfolioCard>
+                    <Flex
+                        wrap={"wrap"}
+                        columnGap={8}
+                        rowGap={16}
+                        justifyContent={"center"}
+                        alignItems={"flex-start"}
+                    >
+                        {porfolioProjects.map((project) => (
+                            <PortfolioCard
+                                cardData={project}
+                                key={project.title}
+                            />
+                        ))}
+                    </Flex>
                 </Flex>
             </PageWrapper>
         </>

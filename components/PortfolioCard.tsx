@@ -2,7 +2,6 @@ import React, { FC } from "react";
 import {
     Box,
     Button,
-    ButtonGroup,
     Center,
     Flex,
     Heading,
@@ -10,14 +9,22 @@ import {
     Text,
 } from "@chakra-ui/react";
 import Image from "next/image";
-import CourseAnalytics from "../public/images/portfolio/Course-Analytics-Course.png";
 import BodyLink from "./BodyLink";
 
 interface PortfolioCardProps {
-    children: any;
+    cardData: CardData;
 }
 
-const PortfolioCard: FC<PortfolioCardProps> = ({ children }) => {
+interface CardData {
+    title: string;
+    tags: string[];
+    description: string;
+    link: string;
+    imageSrc: string;
+}
+
+const PortfolioCard: FC<PortfolioCardProps> = ({ cardData }) => {
+    const { title, tags, description, link, imageSrc } = cardData;
     return (
         <Center
             w={"100%"}
@@ -43,23 +50,25 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ children }) => {
                     <Center
                         overflow={"hidden"}
                         width={"100%"}
+                        height={"350px"}
                         backgroundImage={
                             "linear-gradient(to left, #9be15d 0%, #00e3ae 100%)"
                         }
                     >
                         <Flex filter={"opacity(60%)"} height={"100%"}>
                             <Image
-                                src={CourseAnalytics}
-                                alt={"image"}
-                                height={"900px"}
+                                src={imageSrc}
+                                alt={title + "preview image"}
+                                width={"550px"}
+                                height={"350px"}
                                 objectFit={"cover"}
-                                objectPosition={"100% 0%"}
+                                objectPosition={"0% 0%"}
                             />
                         </Flex>
                     </Center>
                     <Flex width={"100%"} px={6} py={1}>
                         <Heading fontSize={"2xl"}>
-                            <BodyLink>Course Analytics</BodyLink>
+                            <BodyLink to={link}>{title}</BodyLink>
                         </Heading>
                     </Flex>
                     <Flex
@@ -70,30 +79,21 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ children }) => {
                         gap={1}
                         cursor={"default"}
                     >
-                        <Tag fontWeight={"300"}>TypeScript</Tag>
-                        <Tag fontWeight={"300"}>Next.js</Tag>
-                        <Tag fontWeight={"300"}>React</Tag>
-                        <Tag fontWeight={"300"}>Chakra UI</Tag>
-                        <Tag fontWeight={"300"}>MongoDB</Tag>
+                        {tags.map((tag) => (
+                            <Tag fontWeight={"300"} key={title + tag}>
+                                {tag}
+                            </Tag>
+                        ))}
                     </Flex>
 
                     <Flex w={"100%"} px={6} pb={4}>
                         <Text color={"#666"} fontSize={"md"} fontWeight={"300"}>
-                            Course Analytics was developed for students of
-                            Oregon State University&apos;s Computer Science
-                            program. It provides students with aggregated data
-                            and tips to help students understand the difficulty,
-                            time commitment, common course pairings. The data
-                            has been submitted by real students.
+                            {description}
                         </Text>
                     </Flex>
 
                     <Flex pb={4} px={6} gap={2}>
-                        <ButtonGroup>
-                            <Button>Read More</Button>
-                            <Button>View Demo</Button>
-                            <Button>View Source</Button>
-                        </ButtonGroup>
+                        <Button>Read More</Button>
                     </Flex>
                 </Flex>
             </Box>
