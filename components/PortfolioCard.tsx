@@ -55,14 +55,20 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ cardData }) => {
                             "linear-gradient(to left, #9be15d 0%, #00e3ae 100%)"
                         }
                     >
-                        <Flex filter={"opacity(60%)"} height={"100%"}>
+                        <Flex
+                            transition={".5s"}
+                            filter={"opacity(75%)"}
+                            height={"100%"}
+                            _hover={{ filter: "opacity(100%)" }}
+                        >
                             <Image
                                 src={imageSrc}
                                 alt={title + "preview image"}
                                 width={"550px"}
                                 height={"350px"}
                                 objectFit={"cover"}
-                                objectPosition={"0% 0%"}
+                                objectPosition={"50% 0%"}
+                                quality={100}
                             />
                         </Flex>
                     </Center>

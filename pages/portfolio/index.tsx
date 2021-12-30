@@ -32,7 +32,7 @@ const Portfolio: NextPage = () => {
                 <Flex
                     direction={"column"}
                     gap={8}
-                    px={8}
+                    p={8}
                     fontSize={"xl"}
                     textAlign={"justify"}
                     color={"#222"}
