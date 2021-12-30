@@ -112,6 +112,10 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ cardData }) => {
                                         backgroundSize: "100% 10%",
                                         backgroundColor: "gray.200",
                                     }}
+                                    _active={{
+                                        backgroundSize: "100% 10%",
+                                        backgroundColor: "gray.300",
+                                    }}
                                     fontWeight={"300"}
                                     rightIcon={<ArrowForwardIcon />}
                                 >
