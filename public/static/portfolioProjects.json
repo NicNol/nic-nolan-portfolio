@@ -12,20 +12,20 @@
         ],
         "description": "Course Analytics was developed for students of Oregon State University's Computer Science program. It provides aggregated data and tips to help students understand course difficulties, time commitments, and common course pairings. The data is crowdsourced from real student course reviews.",
         "link": "/portfolio/course-analytics",
-        "imageSrc": "/../public/images/portfolio/Course-Analytics-Course.png"
+        "imageSrc": "/images/portfolio/Course-Analytics-Course.png"
     },
     {
         "title": "Boeing Speckle",
         "tags": ["JavaScript", "React", "MongoDB", "Express", "Node.js"],
         "description": "Boeing Speckle, short for Boeing Specification Cull, is an API that scrapes data from BAC specifications publicly available on the Boeing D1-4426 for companies in the Boeing supply chain. Boeing Speckle allows users to query Boeing specifications by their BAC (document) number, and return related information including the document title, revision level, and revision date. The API is available as a GUI (graphical user interface) for quick access, or by making API calls to return a JSON response.",
         "link": "/portfolio/boeing-speckle",
-        "imageSrc": "/../public/images/portfolio/Boeing-Speckle.jpg"
+        "imageSrc": "/images/portfolio/Boeing-Speckle.jpg"
     },
     {
         "title": "Fource",
         "tags": ["JavaScript", "Express", "Node.js", "Socket.io"],
         "description": "Fource is an abstract strategy game based around realtime gameplay. The objective is to connect four of your pieces vertically or horizontally on the board. When pieces are placed on the board, a force is acted upon them. Pieces of the same color are pulled toward the placed piece and pieces of the opposite color are pushed away. Users play (or spectate!) over the internet and may chat during play.",
         "link": "/portfolio/fource",
-        "imageSrc": "/../public/images/portfolio/Fource.png"
+        "imageSrc": "/images/portfolio/Fource.png"
     }
 ]
