@@ -15,6 +15,7 @@ export default function BodyLink({ children, to = "/" }: any) {
                     _hover={{
                         textDecoration: "none",
                         backgroundSize: "100% 10%",
+                        color: "#222",
                     }}
                     backgroundImage={
                         "linear-gradient(to left, #9be15d 0%, #00e3ae 100%)"

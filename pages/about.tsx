@@ -33,7 +33,8 @@ const About: NextPage = () => {
                     p={8}
                     fontSize={"xl"}
                     textAlign={"justify"}
-                    color={"#222"}
+                    color={"#666"}
+                    fontWeight={"300"}
                 >
                     <Box>
                         <Heading
@@ -45,6 +46,8 @@ const About: NextPage = () => {
                             backgroundRepeat={"no-repeat"}
                             backgroundSize={"100% 10%"}
                             display={"inline-block"}
+                            color={"#222"}
+                            fontWeight={"700"}
                         >
                             About Nic
                         </Heading>
