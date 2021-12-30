@@ -1,7 +1,7 @@
 import { Flex, Icon, Link } from "@chakra-ui/react";
 import Image from "next/image";
 import LinkedIn from "../public/images/icons/LinkedIn.svg";
-import GitHub from "../public/images/icons/Github.svg";
+import GitHub from "../public/images/icons/GitHub.svg";
 import { default as NextLink } from "next/link";
 import { IoMail } from "react-icons/io5";
 
