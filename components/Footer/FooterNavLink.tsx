@@ -1,7 +1,10 @@
 import { Box, Link } from "@chakra-ui/react";
 import { default as NextLink } from "next/link";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 export default function Footer({ children, to = "/" }: any) {
+    const isExternalLink = to[0] != "/";
+
     return (
         <Box>
             <NextLink href={to} passHref>
@@ -20,11 +23,12 @@ export default function Footer({ children, to = "/" }: any) {
                     backgroundPosition={"left bottom"}
                     backgroundRepeat={"no-repeat"}
                     backgroundSize={"0% 0%"}
-                    isExternal={to[0] != "/"}
+                    isExternal={isExternalLink}
                 >
                     {children}
                 </Link>
             </NextLink>
+            {isExternalLink ? <ExternalLinkIcon mx={2} mb={1} /> : null}
         </Box>
     );
 }

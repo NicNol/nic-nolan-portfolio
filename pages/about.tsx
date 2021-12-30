@@ -1,8 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import PageWrapper from "../components/PageWrapper";
-import HeroBlock from "../components/HeroBlock";
-import SkillsBlock from "../components/SkillsBlock";
 
 const Home: NextPage = () => {
     return (
@@ -24,10 +22,7 @@ const Home: NextPage = () => {
                     content="width=device-width, initial-scale=1.0"
                 />
             </Head>
-            <PageWrapper>
-                <HeroBlock />
-                <SkillsBlock />
-            </PageWrapper>
+            <PageWrapper>Hello!</PageWrapper>
         </>
     );
 };

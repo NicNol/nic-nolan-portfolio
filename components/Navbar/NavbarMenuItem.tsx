@@ -22,7 +22,7 @@ export default function MenuItem({ children, to = "/" }: NavbarMenuItemProps) {
                 backgroundImage={
                     "linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%)"
                 }
-                backgroundPosition={" center bottom"}
+                backgroundPosition={"center bottom"}
                 backgroundRepeat={"no-repeat"}
                 backgroundSize={"75% 0%"}
             >
