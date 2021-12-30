@@ -1,7 +1,7 @@
 import { Flex, Icon, Link } from "@chakra-ui/react";
 import Image from "next/image";
-import LinkedIn from "../public/images/LI.png";
-import GitHub from "../public/images/GH.png";
+import LinkedIn from "../public/images/icons/LinkedIn.svg";
+import GitHub from "../public/images/icons/Github.svg";
 import { default as NextLink } from "next/link";
 import { IoMail } from "react-icons/io5";
 
@@ -10,8 +10,8 @@ export default function SocialLinks() {
         <Flex wrap={"nowrap"} gap={4} pl={2} pt={4} h={"52px"}>
             <NextLink href="https://github.com/NicNol" passHref>
                 <Link
-                    opacity={"50%"}
-                    _hover={{ opacity: "70%" }}
+                    opacity={"40%"}
+                    _hover={{ opacity: "60%" }}
                     isExternal
                     _focus={{ outline: "none" }}
                 >
