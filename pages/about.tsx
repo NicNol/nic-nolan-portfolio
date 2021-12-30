@@ -99,7 +99,7 @@ const About: NextPage = () => {
                     <Text>
                         In 2021, I decided to return to Oregon State University
                         to pursue a Bachelor of Science in Computer Science with
-                        an anticipated graduation date in December 2022. I am
+                        an anticipated graduation date of December 2022. I am
                         currently interested in full-stack development, mobile
                         development, and embedded systems.
                     </Text>
