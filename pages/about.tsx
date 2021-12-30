@@ -4,6 +4,7 @@ import HeroBlockMini from "../components/HeroBlockMini";
 import PageWrapper from "../components/PageWrapper";
 
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import BodyLink from "../components/BodyLink";
 
 const Home: NextPage = () => {
     return (
@@ -37,7 +38,6 @@ const Home: NextPage = () => {
                 >
                     <Box>
                         <Heading
-                            // fontWeight={"300"}
                             size={"lg"}
                             backgroundImage={
                                 "linear-gradient(to left, #9be15d 0%, #00e3ae 100%)"
@@ -54,22 +54,36 @@ const Home: NextPage = () => {
                         I am an Oregon-native who grew up in an era of the
                         Internet that encouraged customization and tinkering.
                         Platforms such as Neopets, Myspace, and Tumblr allowed
-                        me opportunities to build webpages with HTML and CSS at
+                        me opportunities to build web pages with HTML and CSS at
                         a young age.
                     </Text>
                     <Text>
-                        As a high schooler, I learned to program on my TI-84
-                        Calculator using BASIC. Many of my first programs were
-                        typed directly into the calculator including a quadratic
-                        equation solver, three-dimensional vector addition
-                        calculator, and a full-fledged number guessing game.
+                        As a high schooler, I learned to program on my{" "}
+                        <BodyLink
+                            to={
+                                "https://www.amazon.com/Texas-Instruments-TI-84-Graphing-Calculator/dp/B0001EMM0Q"
+                            }
+                        >
+                            TI-84 Graphing Calculator
+                        </BodyLink>{" "}
+                        using{" "}
+                        <BodyLink to="https://en.wikipedia.org/wiki/TI-BASIC">
+                            TI-BASIC
+                        </BodyLink>
+                        . The first programs I ever wrote were typed directly on
+                        the calculator including a quadratic equation solver,
+                        three-dimensional vector addition calculator, and a
+                        full-fledged number guessing game.
                     </Text>
                     <Text>
                         While I had always been a great math and science
                         student, I studied Philosophy as an undergraduate
                         because I found it both challenging and engaging. In
-                        2014, I graduated with highest honors from Oregon State
-                        University with Bachelor of Science in Philosophy.
+                        2014, I graduated with highest honors from{" "}
+                        <BodyLink to={"http://www.oregonstate.edu"}>
+                            Oregon State University
+                        </BodyLink>{" "}
+                        with Bachelor of Science in Philosophy.
                     </Text>
                     <Text>
                         In 2015, I began a career in Quality Assurance working
@@ -93,9 +107,15 @@ const Home: NextPage = () => {
                     <Text>
                         Outside of school and work, I love to learn and always
                         seem to find myself reading one thing or another. I also
-                        enjoy weight lifting, acoustic guitar, writing, solving
-                        Rubik&apos;s cubes, going on walks, and spending time
-                        with my partner.
+                        enjoy weight lifting, acoustic guitar, writing, solving{" "}
+                        <BodyLink
+                            to={
+                                "https://www.worldcubeassociation.org/persons/2016NOLA01"
+                            }
+                        >
+                            Rubik&apos;s cubes
+                        </BodyLink>
+                        , going on walks, and spending time with my partner.
                     </Text>
                 </Flex>
             </PageWrapper>

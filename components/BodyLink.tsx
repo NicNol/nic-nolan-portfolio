@@ -2,15 +2,14 @@ import { Box, Link } from "@chakra-ui/react";
 import { default as NextLink } from "next/link";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
-export default function FooterNavLink({ children, to = "/" }: any) {
+export default function BodyLink({ children, to = "/" }: any) {
     const isExternalLink = to[0] != "/";
 
     return (
-        <Box>
+        <Box display={"inline"}>
             <NextLink href={to} passHref>
                 <Link
-                    fontSize={"lg"}
-                    fontWeight={"300"}
+                    fontWeight={"bold"}
                     transition={".2s"}
                     _focus={{ outline: "none" }}
                     _hover={{
@@ -18,7 +17,7 @@ export default function FooterNavLink({ children, to = "/" }: any) {
                         backgroundSize: "100% 10%",
                     }}
                     backgroundImage={
-                        "linear-gradient(62deg, #f093fb 0%, #f5576c 100%)"
+                        "linear-gradient(to left, #9be15d 0%, #00e3ae 100%)"
                     }
                     backgroundPosition={"left bottom"}
                     backgroundRepeat={"no-repeat"}
@@ -28,7 +27,7 @@ export default function FooterNavLink({ children, to = "/" }: any) {
                     {children}
                 </Link>
             </NextLink>
-            {isExternalLink ? <ExternalLinkIcon mx={2} mb={1} /> : null}
+            {isExternalLink ? <ExternalLinkIcon ml={2} mb={1} /> : null}
         </Box>
     );
 }
