@@ -70,7 +70,7 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ cardData }) => {
                             />
                         </Flex>
                     </Flex>
-                    <Flex width={"100%"} px={6} py={4}>
+                    <Flex width={"100%"} px={6} pt={4} pb={1}>
                         <Heading fontSize={"2xl"}>
                             <BodyLink to={link}>{title}</BodyLink>
                         </Heading>
