@@ -2,8 +2,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import HeroBlockMini from "../components/HeroBlockMini";
 import PageWrapper from "../components/PageWrapper";
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import BodyLink from "../components/BodyLink";
+import BodyHeading from "../components/BodyHeading";
 
 const About: NextPage = () => {
     return (
@@ -36,22 +37,7 @@ const About: NextPage = () => {
                     color={"#666"}
                     fontWeight={"300"}
                 >
-                    <Box>
-                        <Heading
-                            size={"lg"}
-                            backgroundImage={
-                                "linear-gradient(to left, #9be15d 0%, #00e3ae 100%)"
-                            }
-                            backgroundPosition={"center bottom"}
-                            backgroundRepeat={"no-repeat"}
-                            backgroundSize={"100% 10%"}
-                            display={"inline-block"}
-                            color={"#222"}
-                            fontWeight={"700"}
-                        >
-                            About Nic
-                        </Heading>
-                    </Box>
+                    <BodyHeading>About Nic</BodyHeading>
                     <Text>
                         I am an Oregon-native who grew up in an era of the
                         Internet that encouraged customization and tinkering.

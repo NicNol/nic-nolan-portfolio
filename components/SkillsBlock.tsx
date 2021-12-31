@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import BodyHeading from "./BodyHeading";
 import SkillCard from "./SkillCard";
 import PythonLogo from "../public/images/icons/Python.svg";
 import JavaScriptLogo from "../public/images/icons/JavaScript.svg";
@@ -33,19 +34,7 @@ const SkillsBlock: FC<SkillsBlockProps> = ({}) => {
             rowGap={16}
         >
             <Flex w={"100%"} justifyContent={"flex-start"} direction={"column"}>
-                <Box>
-                    <Heading
-                        backgroundImage={
-                            "linear-gradient(to left, #9be15d 0%, #00e3ae 100%)"
-                        }
-                        backgroundPosition={"center bottom"}
-                        backgroundRepeat={"no-repeat"}
-                        backgroundSize={"100% 10%"}
-                        display={"inline-block"}
-                    >
-                        Experienced
-                    </Heading>
-                </Box>
+                <BodyHeading>Experienced</BodyHeading>
                 <Text
                     fontWeight={"300"}
                     fontSize={"xl"}
@@ -72,19 +61,7 @@ const SkillsBlock: FC<SkillsBlockProps> = ({}) => {
             </Flex>
 
             <Flex w={"100%"} justifyContent={"flex-start"} direction={"column"}>
-                <Box>
-                    <Heading
-                        backgroundImage={
-                            "linear-gradient(to left, #9be15d 0%, #00e3ae 100%)"
-                        }
-                        backgroundPosition={"center bottom"}
-                        backgroundRepeat={"no-repeat"}
-                        backgroundSize={"100% 10%"}
-                        display={"inline-block"}
-                    >
-                        Familiar
-                    </Heading>
-                </Box>
+                <BodyHeading>Familiar</BodyHeading>
                 <Text
                     fontWeight={"300"}
                     fontSize={"xl"}
@@ -104,19 +81,7 @@ const SkillsBlock: FC<SkillsBlockProps> = ({}) => {
             </Flex>
 
             <Flex w={"100%"} justifyContent={"flex-start"} direction={"column"}>
-                <Box>
-                    <Heading
-                        backgroundImage={
-                            "linear-gradient(to left, #9be15d 0%, #00e3ae 100%)"
-                        }
-                        backgroundPosition={"center bottom"}
-                        backgroundRepeat={"no-repeat"}
-                        backgroundSize={"100% 9%"}
-                        display={"inline-block"}
-                    >
-                        Interested
-                    </Heading>
-                </Box>
+                <BodyHeading>Interested</BodyHeading>
                 <Text
                     fontWeight={"300"}
                     fontSize={"xl"}

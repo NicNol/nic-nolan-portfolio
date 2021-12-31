@@ -2,16 +2,15 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import HeroBlockMini from "../../components/HeroBlockMini";
 import PageWrapper from "../../components/PageWrapper";
-import { Flex } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import BodyLink from "../../components/BodyLink";
 import BodyHeading from "../../components/BodyHeading";
-import PortfolioCard from "../../components/PortfolioCard";
-import porfolioProjects from "../../public/static/portfolioProjects.json";
 
-const Portfolio: NextPage = () => {
+const CourseAnalytics: NextPage = () => {
     return (
         <>
             <Head>
-                <title>Nic Nolan | Portfolio</title>
+                <title>Nic Nolan | Course Analytics</title>
                 <meta charSet="UTF-8" />
                 <meta
                     name="keywords"
@@ -37,25 +36,11 @@ const Portfolio: NextPage = () => {
                     textAlign={"justify"}
                     color={"#222"}
                 >
-                    <BodyHeading>Porfolio Projects</BodyHeading>
-                    <Flex
-                        wrap={"wrap"}
-                        columnGap={8}
-                        rowGap={16}
-                        justifyContent={"center"}
-                        alignItems={"flex-start"}
-                    >
-                        {porfolioProjects.map((project) => (
-                            <PortfolioCard
-                                cardData={project}
-                                key={project.title}
-                            />
-                        ))}
-                    </Flex>
+                    <BodyHeading>Course Analytics</BodyHeading>
                 </Flex>
             </PageWrapper>
         </>
     );
 };
 
-export default Portfolio;
+export default CourseAnalytics;
