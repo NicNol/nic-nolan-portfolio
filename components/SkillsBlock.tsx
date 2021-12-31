@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import BodyHeading from "./BodyHeading";
 import SkillCard from "./SkillCard";
 import PythonLogo from "../public/images/icons/Python.svg";
@@ -10,10 +10,13 @@ import ReactLogo from "../public/images/icons/React.svg";
 import NextLogo from "../public/images/icons/Next.svg";
 import MongoDBLogo from "../public/images/icons/MongoDB.svg";
 import ExpressLogo from "../public/images/icons/Express.svg";
+import HerokuLogo from "../public/images/icons/Heroku.svg";
 import GitLogo from "../public/images/icons/Git.svg";
 import CLogo from "../public/images/icons/C.svg";
 import CppLogo from "../public/images/icons/Cpp.svg";
 import JavaLogo from "../public/images/icons/Java.svg";
+import PHPLogo from "../public/images/icons/PHP.svg";
+import VercelLogo from "../public/images/icons/Vercel.svg";
 import MariaDBLogo from "../public/images/icons/MariaDB.svg";
 import JiraLogo from "../public/images/icons/Jira.svg";
 import JestLogo from "../public/images/icons/Jest.svg";
@@ -57,6 +60,7 @@ const SkillsBlock: FC<SkillsBlockProps> = ({}) => {
                 <SkillCard name={"Next.js"} src={NextLogo} />
                 <SkillCard name={"MongoDB (NoSQL)"} src={MongoDBLogo} />
                 <SkillCard name={"Express"} src={ExpressLogo} />
+                <SkillCard name={"Heroku"} src={HerokuLogo} />
                 <SkillCard name={"Git"} src={GitLogo} />
             </Flex>
 
@@ -76,6 +80,8 @@ const SkillsBlock: FC<SkillsBlockProps> = ({}) => {
                 <SkillCard name={"C"} src={CLogo} />
                 <SkillCard name={"C++"} src={CppLogo} />
                 <SkillCard name={"Java"} src={JavaLogo} />
+                <SkillCard name={"PHP"} src={PHPLogo} />
+                <SkillCard name={"Vercel"} src={VercelLogo} />
                 <SkillCard name={"MariaDB (SQL)"} src={MariaDBLogo} />
                 <SkillCard name={"Jira"} src={JiraLogo} />
             </Flex>
