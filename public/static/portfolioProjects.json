@@ -17,7 +17,7 @@
     {
         "title": "Boeing Speckle",
         "tags": ["JavaScript", "React", "MongoDB", "Express", "Node.js"],
-        "description": "Boeing Speckle, short for Boeing Specification Cull, is an API that scrapes data from BAC specifications publicly available on the Boeing D1-4426 for companies in the Boeing supply chain. Boeing Speckle allows users to query Boeing specifications by their BAC (document) number, and return related information including the document title, revision level, and revision date. The API is available as a GUI (graphical user interface) for quick access, or by making API calls to return a JSON response.",
+        "description": "Boeing Speckle is an API that scrapes data from BAC specifications publicly available on the Boeing D1-4426 website for companies in the Boeing supply chain. Boeing Speckle allows users to query Boeing specifications by their document number and return related information including the document title, revision level, and revision date. The API is available as a GUI or by making API calls to return a JSON response.",
         "link": "/portfolio/boeing-speckle",
         "imageSrc": "/images/portfolio/Boeing-Speckle.jpg"
     },

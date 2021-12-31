@@ -1,15 +1,19 @@
 import React, { FC } from "react";
 import {
+    background,
     Box,
     Button,
     Center,
     Flex,
     Heading,
+    Link,
     Tag,
     Text,
 } from "@chakra-ui/react";
+import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Image from "next/image";
 import BodyLink from "./BodyLink";
+import { default as NextLink } from "next/link";
 
 interface PortfolioCardProps {
     cardData: CardData;
@@ -28,51 +32,45 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ cardData }) => {
     return (
         <Center
             w={"100%"}
+            h={"650px"}
             maxW={"550px"}
-            borderRadius={["40px", "50px"]}
+            borderRadius={6}
             boxShadow={"xl"}
             border={"1px solid #eee"}
             backgroundColor={"white"}
         >
             <Box
                 w={"100%"}
-                borderRadius={["38px", "48px"]}
+                borderRadius={6}
                 overflow={"hidden"}
                 height={"100%"}
             >
                 <Flex
                     direction={"column"}
-                    justifyContent={"flex-end"}
                     alignItems={"center"}
                     w={"100%"}
                     height={"100%"}
                 >
-                    <Center
+                    <Flex
                         overflow={"hidden"}
                         width={"100%"}
-                        height={"350px"}
+                        flexGrow={1}
                         backgroundImage={
-                            "linear-gradient(to left, #9be15d 0%, #00e3ae 100%)"
+                            "linear-gradient(320deg, #9be15d99 0%, #00e3ae99 100%)"
                         }
                     >
-                        <Flex
-                            transition={".5s"}
-                            filter={"opacity(75%)"}
-                            height={"100%"}
-                            _hover={{ filter: "opacity(100%)" }}
-                        >
+                        <Flex height={"100%"} w={"100%"} position={"relative"}>
                             <Image
                                 src={imageSrc}
-                                alt={title + "preview image"}
-                                width={"550px"}
-                                height={"350px"}
-                                objectFit={"cover"}
-                                objectPosition={"50% 0%"}
+                                alt={`${title} preview image`}
+                                layout={"fill"}
+                                objectFit={"contain"}
+                                objectPosition={"center center"}
                                 quality={100}
                             />
                         </Flex>
-                    </Center>
-                    <Flex width={"100%"} px={6} py={1}>
+                    </Flex>
+                    <Flex width={"100%"} px={6} pt={4} pb={1}>
                         <Heading fontSize={"2xl"}>
                             <BodyLink to={link}>{title}</BodyLink>
                         </Heading>
@@ -99,7 +97,32 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ cardData }) => {
                     </Flex>
 
                     <Flex pb={4} px={6} gap={2}>
-                        <Button>Read More</Button>
+                        <NextLink href={link} passHref>
+                            <Link>
+                                <Button
+                                    backgroundImage={
+                                        "linear-gradient(to left, #9be15d 0%, #00e3ae 100%)"
+                                    }
+                                    backgroundPosition={"bottom center"}
+                                    backgroundRepeat={"no-repeat"}
+                                    backgroundSize={"100% 0%"}
+                                    transition={".3s"}
+                                    _focus={{ outline: "none" }}
+                                    _hover={{
+                                        backgroundSize: "100% 10%",
+                                        backgroundColor: "gray.200",
+                                    }}
+                                    _active={{
+                                        backgroundSize: "100% 10%",
+                                        backgroundColor: "gray.300",
+                                    }}
+                                    fontWeight={"300"}
+                                    rightIcon={<ArrowForwardIcon />}
+                                >
+                                    View Details
+                                </Button>
+                            </Link>
+                        </NextLink>
                     </Flex>
                 </Flex>
             </Box>
