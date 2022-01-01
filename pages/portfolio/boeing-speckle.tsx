@@ -53,7 +53,7 @@ const BoeingSpeckle: NextPage = () => {
                         <Text
                             fontWeight={"300"}
                             fontSize={"xl"}
-                            color={"#999"}
+                            color={"#666"}
                             textAlign={"justify"}
                         >
                             Boeing Speckle is an API that scrapes data from BAC
@@ -126,7 +126,7 @@ const BoeingSpeckle: NextPage = () => {
                                 <Text
                                     fontWeight={"300"}
                                     fontSize={"xl"}
-                                    color={"#999"}
+                                    color={"#666"}
                                     textAlign={"justify"}
                                 >
                                     The following sections detail the problem

@@ -53,7 +53,7 @@ const Fource: NextPage = () => {
                         <Text
                             fontWeight={"300"}
                             fontSize={"xl"}
-                            color={"#999"}
+                            color={"#666"}
                             textAlign={"justify"}
                         >
                             Fource is an abstract strategy game based around
@@ -130,7 +130,7 @@ const Fource: NextPage = () => {
                                 <Text
                                     fontWeight={"300"}
                                     fontSize={"xl"}
-                                    color={"#999"}
+                                    color={"#666"}
                                     textAlign={"justify"}
                                 >
                                     The following sections detail the problem

@@ -62,7 +62,7 @@ const CourseAnalytics: NextPage = () => {
                         <Text
                             fontWeight={"300"}
                             fontSize={"xl"}
-                            color={"#999"}
+                            color={"#666"}
                             textAlign={"justify"}
                         >
                             Course Analytics was developed for students of
@@ -167,7 +167,7 @@ const CourseAnalytics: NextPage = () => {
                                 <Text
                                     fontWeight={"300"}
                                     fontSize={"xl"}
-                                    color={"#999"}
+                                    color={"#666"}
                                     textAlign={"justify"}
                                 >
                                     The following sections detail the problem
