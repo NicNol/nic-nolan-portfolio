@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Box, Flex } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import CtaButton from "../components/CtaButton";
 
 interface CtaBlockProps {}
@@ -16,7 +16,7 @@ const CtaBlock: FC<CtaBlockProps> = ({}) => {
         >
             <CtaButton to="/about">Learn about me</CtaButton>
             <CtaButton to="/portfolio">Explore my work</CtaButton>
-            <CtaButton to="#skills">View my skills</CtaButton>
+            <CtaButton to="#skills">View competencies</CtaButton>
         </Flex>
     );
 };
