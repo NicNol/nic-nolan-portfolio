@@ -9,7 +9,7 @@ const BodyHeading: FC<BodyHeadingProps> = ({ children }) => {
     return (
         <Box>
             <Heading
-                size={"lg"}
+                size={"xl"}
                 backgroundImage={
                     "linear-gradient(to left, #9be15d 0%, #00e3ae 100%)"
                 }

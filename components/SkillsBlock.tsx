@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useRef } from "react";
 import { Flex, Text } from "@chakra-ui/react";
 import BodyHeading from "./BodyHeading";
 import SkillCard from "./SkillCard";
@@ -27,7 +27,7 @@ import AndroidLogo from "../public/images/icons/Android.svg";
 
 interface SkillsBlockProps {}
 
-const SkillsBlock: FC<SkillsBlockProps> = ({}) => {
+const SkillsBlock: FC<SkillsBlockProps> = () => {
     return (
         <Flex
             direction={"column"}
@@ -35,9 +35,10 @@ const SkillsBlock: FC<SkillsBlockProps> = ({}) => {
             py={16}
             px={6}
             rowGap={16}
+            id={"skills"}
         >
             <Flex w={"100%"} justifyContent={"flex-start"} direction={"column"}>
-                <BodyHeading>Experienced</BodyHeading>
+                <BodyHeading>Experienced With</BodyHeading>
                 <Text
                     fontWeight={"300"}
                     fontSize={"xl"}
@@ -65,7 +66,7 @@ const SkillsBlock: FC<SkillsBlockProps> = ({}) => {
             </Flex>
 
             <Flex w={"100%"} justifyContent={"flex-start"} direction={"column"}>
-                <BodyHeading>Familiar</BodyHeading>
+                <BodyHeading>Familiar With</BodyHeading>
                 <Text
                     fontWeight={"300"}
                     fontSize={"xl"}
@@ -87,7 +88,7 @@ const SkillsBlock: FC<SkillsBlockProps> = ({}) => {
             </Flex>
 
             <Flex w={"100%"} justifyContent={"flex-start"} direction={"column"}>
-                <BodyHeading>Interested</BodyHeading>
+                <BodyHeading>Interested In</BodyHeading>
                 <Text
                     fontWeight={"300"}
                     fontSize={"xl"}
