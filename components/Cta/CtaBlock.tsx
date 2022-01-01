@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Flex } from "@chakra-ui/react";
-import CtaButton from "../components/CtaButton";
+import CtaButton from "./CtaButton";
 
 interface CtaBlockProps {}
 

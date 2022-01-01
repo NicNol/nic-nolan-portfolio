@@ -1,14 +1,14 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import HeroBlockMini from "../../components/HeroBlockMini";
+import HeroBlockMini from "../../components/Hero/HeroBlockMini";
 import PageWrapper from "../../components/PageWrapper";
 import { Alert, AlertIcon, Box, Flex, Tag, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import homeImage from "../../public/images/portfolio/Course-Analytics-Home.png";
 import courseImage from "../../public/images/portfolio/Course-Analytics-Course.png";
-import BodyLink from "../../components/BodyLink";
-import BodyHeading from "../../components/BodyHeading";
-import BodyButton from "../../components/BodyButton";
+import BodyLink from "../../components/Body/BodyLink";
+import BodyHeading from "../../components/Body/BodyHeading";
+import BodyButton from "../../components/Body/BodyButton";
 
 const CourseAnalytics: NextPage = () => {
     const tags = [
