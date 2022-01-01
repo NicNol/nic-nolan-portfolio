@@ -34,18 +34,17 @@ const About: NextPage = () => {
                     p={8}
                     fontSize={"xl"}
                     textAlign={"justify"}
-                    color={"#666"}
                     fontWeight={"300"}
                 >
                     <BodyHeading>About Nic</BodyHeading>
-                    <Text>
+                    <Text color={"#666"}>
                         I am an Oregon-native who grew up in an era of the
                         Internet that encouraged customization and tinkering.
                         Platforms such as Neopets, Myspace, and Tumblr allowed
                         me opportunities to build web pages with HTML and CSS at
                         a young age.
                     </Text>
-                    <Text>
+                    <Text color={"#666"}>
                         As a high schooler, I learned to program on my{" "}
                         <BodyLink
                             to={
@@ -63,7 +62,7 @@ const About: NextPage = () => {
                         three-dimensional vector addition calculator, and a
                         full-fledged number guessing game.
                     </Text>
-                    <Text>
+                    <Text color={"#666"}>
                         While I had always been a great math and science
                         student, I studied Philosophy as an undergraduate
                         because I found it both challenging and engaging. In
@@ -73,7 +72,7 @@ const About: NextPage = () => {
                         </BodyLink>{" "}
                         with Bachelor of Science in Philosophy.
                     </Text>
-                    <Text>
+                    <Text color={"#666"}>
                         In 2015, I began a career in Quality Assurance working
                         to ensure that manufactured products were produced
                         consistently and to ultimately reduce product defects.
@@ -85,14 +84,14 @@ const About: NextPage = () => {
                         electronic systems for defect-reporting for my
                         companies.
                     </Text>
-                    <Text>
+                    <Text color={"#666"}>
                         In 2021, I decided to return to Oregon State University
                         to pursue a Bachelor of Science in Computer Science with
                         an anticipated graduation date of December 2022. I am
                         currently interested in full-stack development, mobile
                         development, and embedded systems.
                     </Text>
-                    <Text>
+                    <Text color={"#666"}>
                         Outside of school and work, I love to learn and always
                         seem to find myself reading one thing or another. I also
                         enjoy weight lifting, acoustic guitar, writing, chess,
