@@ -3,13 +3,14 @@ import { Box, Heading } from "@chakra-ui/react";
 
 interface BodyHeadingProps {
     children: any;
+    size?: "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl";
 }
 
-const BodyHeading: FC<BodyHeadingProps> = ({ children }) => {
+const BodyHeading: FC<BodyHeadingProps> = ({ children, size = "xl" }) => {
     return (
         <Box>
             <Heading
-                size={"xl"}
+                size={size}
                 backgroundImage={
                     "linear-gradient(to left, #9be15d 0%, #00e3ae 100%)"
                 }
