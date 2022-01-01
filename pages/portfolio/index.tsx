@@ -2,8 +2,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import HeroBlockMini from "../../components/HeroBlockMini";
 import PageWrapper from "../../components/PageWrapper";
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
-import BodyLink from "../../components/BodyLink";
+import { Flex } from "@chakra-ui/react";
+import BodyHeading from "../../components/BodyHeading";
 import PortfolioCard from "../../components/PortfolioCard";
 import porfolioProjects from "../../public/static/portfolioProjects.json";
 
@@ -37,20 +37,7 @@ const Portfolio: NextPage = () => {
                     textAlign={"justify"}
                     color={"#222"}
                 >
-                    <Box>
-                        <Heading
-                            size={"lg"}
-                            backgroundImage={
-                                "linear-gradient(to left, #9be15d 0%, #00e3ae 100%)"
-                            }
-                            backgroundPosition={"center bottom"}
-                            backgroundRepeat={"no-repeat"}
-                            backgroundSize={"100% 10%"}
-                            display={"inline-block"}
-                        >
-                            Porfolio Projects
-                        </Heading>
-                    </Box>
+                    <BodyHeading>Porfolio Projects</BodyHeading>
                     <Flex
                         wrap={"wrap"}
                         columnGap={8}

@@ -3,6 +3,7 @@ import Head from "next/head";
 import PageWrapper from "../components/PageWrapper";
 import HeroBlock from "../components/HeroBlock";
 import SkillsBlock from "../components/SkillsBlock";
+import CtaBlock from "../components/CtaBlock";
 
 const Home: NextPage = () => {
     return (
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
             </Head>
             <PageWrapper>
                 <HeroBlock />
+                <CtaBlock />
                 <SkillsBlock />
             </PageWrapper>
         </>

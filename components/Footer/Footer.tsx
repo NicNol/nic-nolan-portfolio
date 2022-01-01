@@ -19,9 +19,15 @@ export default function Footer() {
                     </FooterNavStack>
                     <FooterNavStack>
                         <FooterNavHeader>Projects</FooterNavHeader>
-                        <FooterNavLink>Course Analytics</FooterNavLink>
-                        <FooterNavLink>Boeing Speckle</FooterNavLink>
-                        <FooterNavLink>Fource</FooterNavLink>
+                        <FooterNavLink to={"/portfolio/course-analytics"}>
+                            Course Analytics
+                        </FooterNavLink>
+                        <FooterNavLink to={"/portfolio/boeing-speckle"}>
+                            Boeing Speckle
+                        </FooterNavLink>
+                        <FooterNavLink to={"/portfolio/fource"}>
+                            Fource
+                        </FooterNavLink>
                         <FooterNavLink>String Primatives</FooterNavLink>
                     </FooterNavStack>
                     <FooterNavStack>

@@ -98,7 +98,11 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ cardData }) => {
 
                     <Flex pb={4} px={6} gap={2}>
                         <NextLink href={link} passHref>
-                            <Link>
+                            <Link
+                                _hover={{
+                                    textDecoration: "none",
+                                }}
+                            >
                                 <Button
                                     backgroundImage={
                                         "linear-gradient(to left, #9be15d 0%, #00e3ae 100%)"
@@ -118,6 +122,8 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ cardData }) => {
                                     }}
                                     fontWeight={"300"}
                                     rightIcon={<ArrowForwardIcon />}
+                                    borderRadius={32}
+                                    boxShadow={"md"}
                                 >
                                     View Details
                                 </Button>
