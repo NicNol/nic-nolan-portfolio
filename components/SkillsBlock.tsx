@@ -1,4 +1,4 @@
-import React, { FC, useRef } from "react";
+import React, { FC } from "react";
 import { Flex, Text } from "@chakra-ui/react";
 import BodyHeading from "./BodyHeading";
 import SkillCard from "./SkillCard";
@@ -34,77 +34,93 @@ const SkillsBlock: FC<SkillsBlockProps> = () => {
             alignItems={"center"}
             py={16}
             px={6}
-            rowGap={16}
+            rowGap={32}
             id={"skills"}
         >
-            <Flex w={"100%"} justifyContent={"flex-start"} direction={"column"}>
-                <BodyHeading>Experienced With</BodyHeading>
-                <Text
-                    fontWeight={"300"}
-                    fontSize={"xl"}
-                    color={"#999"}
-                    textAlign={"justify"}
+            <Flex direction={"column"} rowGap={12}>
+                <Flex
+                    w={"100%"}
+                    justifyContent={"flex-start"}
+                    direction={"column"}
                 >
-                    Languages and technologies that I have used to build full
-                    applications
-                </Text>
+                    <BodyHeading>Experienced With</BodyHeading>
+                    <Text
+                        fontWeight={"300"}
+                        fontSize={"xl"}
+                        color={"#999"}
+                        textAlign={"justify"}
+                    >
+                        Languages and technologies that I have used to build
+                        full applications
+                    </Text>
+                </Flex>
+                <Flex wrap={"wrap"} gap={8} justifyContent={"center"}>
+                    <SkillCard name={"Python"} src={PythonLogo} />
+                    <SkillCard name={"JavaScript"} src={JavaScriptLogo} />
+                    <SkillCard name={"TypeScript"} src={TypeScriptLogo} />
+                    <SkillCard
+                        name={"Visual Basic for Applications"}
+                        src={VBALogo}
+                    />
+                    <SkillCard name={"React"} src={ReactLogo} />
+                    <SkillCard name={"Next.js"} src={NextLogo} />
+                    <SkillCard name={"MongoDB (NoSQL)"} src={MongoDBLogo} />
+                    <SkillCard name={"Express"} src={ExpressLogo} />
+                    <SkillCard name={"Heroku"} src={HerokuLogo} />
+                    <SkillCard name={"Git"} src={GitLogo} />
+                </Flex>
             </Flex>
-            <Flex wrap={"wrap"} gap={8} justifyContent={"center"}>
-                <SkillCard name={"Python"} src={PythonLogo} />
-                <SkillCard name={"JavaScript"} src={JavaScriptLogo} />
-                <SkillCard name={"TypeScript"} src={TypeScriptLogo} />
-                <SkillCard
-                    name={"Visual Basic for Applications"}
-                    src={VBALogo}
-                />
-                <SkillCard name={"React"} src={ReactLogo} />
-                <SkillCard name={"Next.js"} src={NextLogo} />
-                <SkillCard name={"MongoDB (NoSQL)"} src={MongoDBLogo} />
-                <SkillCard name={"Express"} src={ExpressLogo} />
-                <SkillCard name={"Heroku"} src={HerokuLogo} />
-                <SkillCard name={"Git"} src={GitLogo} />
-            </Flex>
-
-            <Flex w={"100%"} justifyContent={"flex-start"} direction={"column"}>
-                <BodyHeading>Familiar With</BodyHeading>
-                <Text
-                    fontWeight={"300"}
-                    fontSize={"xl"}
-                    color={"#999"}
-                    textAlign={"justify"}
+            <Flex direction={"column"} rowGap={12}>
+                <Flex
+                    w={"100%"}
+                    justifyContent={"flex-start"}
+                    direction={"column"}
                 >
-                    Languages and technologies that I have worked with to create
-                    small-scale solutions
-                </Text>
+                    <BodyHeading>Familiar With</BodyHeading>
+                    <Text
+                        fontWeight={"300"}
+                        fontSize={"xl"}
+                        color={"#999"}
+                        textAlign={"justify"}
+                    >
+                        Languages and technologies that I have worked with to
+                        create small-scale solutions
+                    </Text>
+                </Flex>
+                <Flex wrap={"wrap"} gap={8} justifyContent={"center"}>
+                    <SkillCard name={"C"} src={CLogo} />
+                    <SkillCard name={"C++"} src={CppLogo} />
+                    <SkillCard name={"Java"} src={JavaLogo} />
+                    <SkillCard name={"PHP"} src={PHPLogo} />
+                    <SkillCard name={"Vercel"} src={VercelLogo} />
+                    <SkillCard name={"MariaDB (SQL)"} src={MariaDBLogo} />
+                    <SkillCard name={"Jira"} src={JiraLogo} />
+                </Flex>
             </Flex>
-            <Flex wrap={"wrap"} gap={8} justifyContent={"center"}>
-                <SkillCard name={"C"} src={CLogo} />
-                <SkillCard name={"C++"} src={CppLogo} />
-                <SkillCard name={"Java"} src={JavaLogo} />
-                <SkillCard name={"PHP"} src={PHPLogo} />
-                <SkillCard name={"Vercel"} src={VercelLogo} />
-                <SkillCard name={"MariaDB (SQL)"} src={MariaDBLogo} />
-                <SkillCard name={"Jira"} src={JiraLogo} />
-            </Flex>
-
-            <Flex w={"100%"} justifyContent={"flex-start"} direction={"column"}>
-                <BodyHeading>Interested In</BodyHeading>
-                <Text
-                    fontWeight={"300"}
-                    fontSize={"xl"}
-                    color={"#999"}
-                    textAlign={"justify"}
+            <Flex direction={"column"} rowGap={12}>
+                <Flex
+                    w={"100%"}
+                    justifyContent={"flex-start"}
+                    direction={"column"}
                 >
-                    Languages and technologies that I am learning and
-                    incorporating into my work
-                </Text>
-            </Flex>
-            <Flex wrap={"wrap"} gap={8} justifyContent={"center"}>
-                <SkillCard name={"Jest"} src={JestLogo} />
-                <SkillCard name={"Docker"} src={DockerLogo} />
-                <SkillCard name={"Amazon Web Services"} src={AWSLogo} />
-                <SkillCard name={"Kotlin"} src={KotlinLogo} />
-                <SkillCard name={"Android Development"} src={AndroidLogo} />
+                    <BodyHeading>Interested In</BodyHeading>
+                    <Text
+                        fontWeight={"300"}
+                        fontSize={"xl"}
+                        color={"#999"}
+                        textAlign={"justify"}
+                    >
+                        Languages and technologies that I am learning and
+                        incorporating into my work
+                    </Text>
+                </Flex>
+                <Flex wrap={"wrap"} gap={8} justifyContent={"center"}>
+                    <SkillCard name={"Jest"} src={JestLogo} />
+                    <SkillCard name={"Docker"} src={DockerLogo} />
+                    <SkillCard name={"Amazon Web Services"} src={AWSLogo} />
+                    <SkillCard name={"Kotlin"} src={KotlinLogo} />
+                    <SkillCard name={"Android Development"} src={AndroidLogo} />
+                </Flex>
             </Flex>
         </Flex>
     );
