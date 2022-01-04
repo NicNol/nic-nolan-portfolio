@@ -176,7 +176,53 @@ const CourseAnalytics: NextPage = () => {
                                     solution, and my final thoughts.
                                 </Text>
                             </Flex>
-                            <BodyHeading size={"lg"}>The Problem</BodyHeading>
+                            <Flex direction={"column"}>
+                                <BodyHeading size={"lg"}>
+                                    The Problem
+                                </BodyHeading>
+                                <Text
+                                    fontWeight={"300"}
+                                    fontSize={"xl"}
+                                    color={"#666"}
+                                    textAlign={"justify"}
+                                >
+                                    One of the reasons that I chose to return to
+                                    Oregon State University for my computer
+                                    science degree was the online community of
+                                    students and alumni worldwide. The program
+                                    has its own unoffical{" "}
+                                    <BodyLink
+                                        to={
+                                            "https://www.reddit.com/r/OSUOnlineCS/"
+                                        }
+                                    >
+                                        subreddit
+                                    </BodyLink>{" "}
+                                    and slack channel with thousands of
+                                    community members. In 2015, one student
+                                    created a Google Survey that would allow
+                                    students to crowdsource information about
+                                    each course, including the time commitment,
+                                    the percieved difficulty, and tips for
+                                    future students. The results of the survey
+                                    were pushed to a{" "}
+                                    <BodyLink
+                                        to={
+                                            "https://docs.google.com/spreadsheets/d/1MFBGJbOXVjtThgj5b6K0rv9xdsC1M2GQ0pJVB-8YCeU/edit#gid=2042942971"
+                                        }
+                                    >
+                                        Google Sheets document
+                                    </BodyLink>
+                                    . Students could filter on certain classes
+                                    or date ranges using the spreadsheet.
+                                    Because each response resulted in one line
+                                    of data, if a student had taken more than
+                                    one class, the second and third classes
+                                    would each be in their own column in the
+                                    spreadsheet. This made using the spreadsheet
+                                    more difficult than it needed to be.
+                                </Text>
+                            </Flex>
                             <BodyHeading size={"lg"}>Challenges</BodyHeading>
                             <BodyHeading size={"lg"}>The Solution</BodyHeading>
                             <BodyHeading size={"lg"}>
