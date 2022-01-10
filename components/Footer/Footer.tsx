@@ -30,7 +30,7 @@ export default function Footer() {
                         <FooterNavLink to={"/portfolio/fource"}>
                             Fource
                         </FooterNavLink>
-                        <FooterNavLink>String Primatives</FooterNavLink>
+                        {/* <FooterNavLink>String Primatives</FooterNavLink> */}
                     </FooterNavStack>
                     <FooterNavStack>
                         <FooterNavHeader>Social</FooterNavHeader>
