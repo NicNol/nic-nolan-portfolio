@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import HeroBlockMini from "../../components/HeroBlockMini";
+import HeroBlockMini from "../../components/Hero/HeroBlockMini";
 import PageWrapper from "../../components/PageWrapper";
 import { Flex } from "@chakra-ui/react";
-import BodyHeading from "../../components/BodyHeading";
+import BodyHeading from "../../components/Body/BodyHeading";
 import PortfolioCard from "../../components/PortfolioCard";
 import porfolioProjects from "../../public/static/portfolioProjects.json";
 

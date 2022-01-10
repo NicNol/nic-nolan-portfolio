@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import PageWrapper from "../components/PageWrapper";
-import HeroBlock from "../components/HeroBlock";
-import SkillsBlock from "../components/SkillsBlock";
-import CtaBlock from "../components/CtaBlock";
+import HeroBlock from "../components/Hero/HeroBlock";
+import SkillsBlock from "../components/Skills/SkillsBlock";
+import CtaBlock from "../components/Cta/CtaBlock";
 
 const Home: NextPage = () => {
     return (

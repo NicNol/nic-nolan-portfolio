@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import Image from "next/image";
-import profilePic from "../public/images/nic.jpg";
+import profilePic from "../../public/images/nic.jpg";
 import { Box, Flex, Heading } from "@chakra-ui/react";
 import SocialLinks from "./SocialLinks";
 

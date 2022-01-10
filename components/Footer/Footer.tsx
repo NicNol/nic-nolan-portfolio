@@ -15,7 +15,9 @@ export default function Footer() {
                         <FooterNavLink to={"/portfolio"}>
                             Portfolio
                         </FooterNavLink>
-                        <FooterNavLink>Resume</FooterNavLink>
+                        <FooterNavLink to={"../Resume - Nic Nolan.pdf"}>
+                            Resume
+                        </FooterNavLink>
                     </FooterNavStack>
                     <FooterNavStack>
                         <FooterNavHeader>Projects</FooterNavHeader>
@@ -28,7 +30,7 @@ export default function Footer() {
                         <FooterNavLink to={"/portfolio/fource"}>
                             Fource
                         </FooterNavLink>
-                        <FooterNavLink>String Primatives</FooterNavLink>
+                        {/* <FooterNavLink>String Primatives</FooterNavLink> */}
                     </FooterNavStack>
                     <FooterNavStack>
                         <FooterNavHeader>Social</FooterNavHeader>

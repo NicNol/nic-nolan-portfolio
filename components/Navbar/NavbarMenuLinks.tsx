@@ -28,10 +28,10 @@ export default function NavbarMenuLinks({ isOpen }: NavbarMenuLinksProps) {
                     py={[3, 3, 0, 0]}
                     align={"center"}
                 >
-                    <MenuItem to="/">Home</MenuItem>
-                    <MenuItem to="/about">About</MenuItem>
-                    <MenuItem to="/portfolio">Portfolio</MenuItem>
-                    <MenuItem to="/">Resume</MenuItem>
+                    <MenuItem to={"/"}>Home</MenuItem>
+                    <MenuItem to={"/about"}>About</MenuItem>
+                    <MenuItem to={"/portfolio"}>Portfolio</MenuItem>
+                    <MenuItem to={"../Resume - Nic Nolan.pdf"}>Resume</MenuItem>
                 </Stack>
             </Collapse>
         </Flex>

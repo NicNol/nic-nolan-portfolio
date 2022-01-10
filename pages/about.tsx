@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import HeroBlockMini from "../components/HeroBlockMini";
+import HeroBlockMini from "../components/Hero/HeroBlockMini";
 import PageWrapper from "../components/PageWrapper";
 import { Flex, Text } from "@chakra-ui/react";
-import BodyLink from "../components/BodyLink";
-import BodyHeading from "../components/BodyHeading";
+import BodyLink from "../components/Body/BodyLink";
+import BodyHeading from "../components/Body/BodyHeading";
 
 const About: NextPage = () => {
     return (
@@ -70,7 +70,7 @@ const About: NextPage = () => {
                         <BodyLink to={"http://www.oregonstate.edu"}>
                             Oregon State University
                         </BodyLink>{" "}
-                        with Bachelor of Science in Philosophy.
+                        with a Bachelor of Science in Philosophy.
                     </Text>
                     <Text color={"#666"}>
                         In 2015, I began a career in Quality Assurance working
@@ -86,22 +86,21 @@ const About: NextPage = () => {
                     </Text>
                     <Text color={"#666"}>
                         In 2021, I decided to return to Oregon State University
-                        to pursue a Bachelor of Science in Computer Science with
-                        an anticipated graduation date of December 2022. I am
+                        to pursue a Bachelor of Science in Computer Science. My
+                        anticipated graduation date is December 2022. I am
                         currently interested in full-stack development, mobile
                         development, and embedded systems.
                     </Text>
                     <Text color={"#666"}>
                         Outside of school and work, I love to learn and always
                         seem to find myself reading one thing or another. I also
-                        enjoy weight lifting, acoustic guitar, writing, chess,
-                        solving{" "}
+                        enjoy weight lifting, acoustic guitar, writing, chess,{" "}
                         <BodyLink
                             to={
                                 "https://www.worldcubeassociation.org/persons/2016NOLA01"
                             }
                         >
-                            Rubik&apos;s cubes
+                            solving Rubik&apos;s cubes
                         </BodyLink>
                         , going on walks, and spending time with my partner.
                     </Text>

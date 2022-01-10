@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import {
-    background,
     Box,
     Button,
     Center,
@@ -12,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Image from "next/image";
-import BodyLink from "./BodyLink";
+import BodyLink from "./Body/BodyLink";
 import { default as NextLink } from "next/link";
 
 interface PortfolioCardProps {
