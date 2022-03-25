@@ -59,14 +59,18 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ cardData }) => {
                         }
                     >
                         <Flex height={"100%"} w={"100%"} position={"relative"}>
-                            <Image
-                                src={imageSrc}
-                                alt={`${title} preview image`}
-                                layout={"fill"}
-                                objectFit={"contain"}
-                                objectPosition={"center center"}
-                                quality={100}
-                            />
+                            <NextLink href={link} passHref>
+                                <Link>
+                                    <Image
+                                        src={imageSrc}
+                                        alt={`${title} preview image`}
+                                        layout={"fill"}
+                                        objectFit={"contain"}
+                                        objectPosition={"center center"}
+                                        quality={100}
+                                    />
+                                </Link>
+                            </NextLink>
                         </Flex>
                     </Flex>
                     <Flex width={"100%"} px={6} pt={4} pb={1}>
