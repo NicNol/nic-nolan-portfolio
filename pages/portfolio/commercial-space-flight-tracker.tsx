@@ -70,7 +70,7 @@ const CommercialSpaceFlightTracker: NextPage = () => {
                             is intended for administrators of a fictional
                             website and allows access to change entries in a
                             real mySQL database using a custom-built GUI. The
-                            project also features an API for peforming CRUD
+                            project also features an API for performing CRUD
                             operations using HTTP requests.
                         </Text>
                     </Flex>
@@ -173,7 +173,7 @@ const CommercialSpaceFlightTracker: NextPage = () => {
                                     and utilize four entity relationships,
                                     including one many-to-many relationship.
                                     This was also a group project, so I spent
-                                    the 10 week term collaborating with a
+                                    the 10-week term collaborating with a
                                     student that I did not know prior to this
                                     project. He presented the idea of creating a
                                     database that tracked commercial space
@@ -245,7 +245,7 @@ const CommercialSpaceFlightTracker: NextPage = () => {
                                     relationship diagram (ERD) to outline the
                                     relationships. We wrote out our database
                                     entities and agreed on each entity&apos;s
-                                    attributes. We also determined the datatype
+                                    attributes. We also determined the data type
                                     and any constrains associated with each
                                     attribute. This was our &quot;source of
                                     truth&quot; as we worked to complete the
@@ -264,13 +264,13 @@ const CommercialSpaceFlightTracker: NextPage = () => {
                                     running. However, because we were using
                                     React and React Router, we did have to set
                                     up a route in our Express backend to ensure
-                                    all (non-API) routes fellback to using React
-                                    Router. This created a true Single Page
-                                    Application (SPA) for our program. We built
-                                    out the frontend using a React component
-                                    library called Chakra UI. This made it easy
-                                    to quickly create accessible components,
-                                    including forms and modals.
+                                    all (non-API) routes fell back to using
+                                    React Router. This created a true Single
+                                    Page Application (SPA) for our program. We
+                                    built out the frontend using a React
+                                    component library called Chakra UI. This
+                                    made it easy to quickly create accessible
+                                    components, including forms and modals.
                                 </Text>
                                 <Text
                                     fontWeight={"300"}
@@ -313,7 +313,7 @@ const CommercialSpaceFlightTracker: NextPage = () => {
                                 >
                                     Overall, I felt like I had the opportunity
                                     to work with SQL and learn a lot about write
-                                    SQL queries. In someways, I think I prefer
+                                    SQL queries. In some ways, I think I prefer
                                     using a noSQL solution like MongoDB a little
                                     better for a smaller project. I can see the
                                     benefit to using SQL queries to wrangle a

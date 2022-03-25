@@ -31,7 +31,7 @@
             "React",
             "Chakra UI"
         ],
-        "description": "Commercial Space Flight Tracker is a database management system (DBMS) admin portal. The project is intended for administrators of a fictional website and allows access to change entries in a real mySQL database using a custom-built GUI. The project also features an API for peforming CRUD operations using HTTP requests.",
+        "description": "Commercial Space Flight Tracker is a database management system (DBMS) admin portal. The project is intended for administrators of a fictional website and allows access to change entries in a real mySQL database using a custom-built GUI. The project also features an API for performing CRUD operations using HTTP requests.",
         "link": "/portfolio/commercial-space-flight-tracker",
         "imageSrc": "/images/portfolio/Commercial-Space-Flight-Tracker.png"
     },
