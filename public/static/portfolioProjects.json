@@ -36,6 +36,13 @@
         "imageSrc": "/images/portfolio/Commercial-Space-Flight-Tracker.png"
     },
     {
+        "title": "small shell",
+        "tags": ["C", "Shell Scripting"],
+        "description": "A miniature version of a Unix shell written in C, small shell provides users with an interface to the Unix system. It gathers input and executes programs based on that input. When a program finishes executing, it displays that program's output. This program was developed as part of an assignment for Oregon State University's CS 344 Operating Systems course.",
+        "link": "/portfolio/small-shell",
+        "imageSrc": "/images/portfolio/Small-Shell.png"
+    },
+    {
         "title": "Fource",
         "tags": ["JavaScript", "Express", "Node.js", "Socket.io"],
         "description": "Fource is an abstract strategy game based around realtime gameplay. The objective is to connect four of your pieces vertically or horizontally on the board. When pieces are placed on the board, a force is acted upon them. Pieces of the same color are pulled toward the placed piece and pieces of the opposite color are pushed away. Users play (or spectate!) over the internet and may chat during play.",
