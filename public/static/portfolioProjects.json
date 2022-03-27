@@ -43,6 +43,13 @@
         "imageSrc": "/images/portfolio/Small-Shell.png"
     },
     {
+        "title": "String Primitives",
+        "tags": ["x86 Assembly", "MASM"],
+        "description": "This is the final project for a course on computer architecture and assembly language. It was programmed using x86 Microsoft Macro Assembler (MASM). The project allows the user to input 10 strings comprised only of digits and optionally a sign (+ or -). The user input is validated and then converted to integer type. All 10 numbers are summed together, converted to a string, and then printed to the user.",
+        "link": "/portfolio/string-primitives",
+        "imageSrc": "/images/portfolio/String-Primitives.png"
+    },
+    {
         "title": "Fource",
         "tags": ["JavaScript", "Express", "Node.js", "Socket.io"],
         "description": "Fource is an abstract strategy game based around realtime gameplay. The objective is to connect four of your pieces vertically or horizontally on the board. When pieces are placed on the board, a force is acted upon them. Pieces of the same color are pulled toward the placed piece and pieces of the opposite color are pushed away. Users play (or spectate!) over the internet and may chat during play.",
