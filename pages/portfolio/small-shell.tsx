@@ -68,7 +68,9 @@ const SmallShell: NextPage = () => {
                     </Flex>
                     <Flex direction={"column"} gap={4}>
                         <Flex gap={4}>
-                            <BodyButton to={"https://github.com/NicNol/fource"}>
+                            <BodyButton
+                                to={"https://github.com/NicNol/small-shell"}
+                            >
                                 View Source
                             </BodyButton>
                         </Flex>
