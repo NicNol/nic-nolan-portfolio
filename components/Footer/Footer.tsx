@@ -27,10 +27,20 @@ export default function Footer() {
                         <FooterNavLink to={"/portfolio/boeing-speckle"}>
                             Boeing Speckle
                         </FooterNavLink>
+                        <FooterNavLink
+                            to={"/portfolio/commercial-space-flight-tracker"}
+                        >
+                            Commercial Space Flight Tracker
+                        </FooterNavLink>
+                        <FooterNavLink to={"/portfolio/small-shell"}>
+                            small shell
+                        </FooterNavLink>
+                        <FooterNavLink to={"/portfolio/string-primitives"}>
+                            String Primitives
+                        </FooterNavLink>
                         <FooterNavLink to={"/portfolio/fource"}>
                             Fource
                         </FooterNavLink>
-                        {/* <FooterNavLink>String Primatives</FooterNavLink> */}
                     </FooterNavStack>
                     <FooterNavStack>
                         <FooterNavHeader>Social</FooterNavHeader>
