@@ -35,8 +35,14 @@ export default function Footer() {
                         <FooterNavLink to={"/portfolio/small-shell"}>
                             small shell
                         </FooterNavLink>
+                        <FooterNavLink to={"/portfolio/mockdata-u"}>
+                            MockData U.
+                        </FooterNavLink>
                         <FooterNavLink to={"/portfolio/string-primitives"}>
                             String Primitives
+                        </FooterNavLink>
+                        <FooterNavLink to={"/portfolio/pie-chart-microservice"}>
+                            Pie Chart Microservice
                         </FooterNavLink>
                         <FooterNavLink to={"/portfolio/fource"}>
                             Fource

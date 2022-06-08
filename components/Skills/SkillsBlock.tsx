@@ -36,7 +36,7 @@ const SkillsBlock: FC<SkillsBlockProps> = () => {
             rowGap={32}
             id={"skills"}
         >
-            <Flex direction={"column"} rowGap={12}>
+            <Flex direction={"column"} rowGap={12} w={"100%"}>
                 <Flex
                     w={"100%"}
                     justifyContent={"flex-start"}
@@ -71,7 +71,7 @@ const SkillsBlock: FC<SkillsBlockProps> = () => {
                     <SkillCard name={"Git"} src={GitLogo} />
                 </Flex>
             </Flex>
-            <Flex direction={"column"} rowGap={12}>
+            <Flex direction={"column"} rowGap={12} w={"100%"}>
                 <Flex
                     w={"100%"}
                     justifyContent={"flex-start"}
@@ -96,7 +96,7 @@ const SkillsBlock: FC<SkillsBlockProps> = () => {
                     <SkillCard name={"Vercel"} src={VercelLogo} />
                 </Flex>
             </Flex>
-            <Flex direction={"column"} rowGap={12}>
+            <Flex direction={"column"} rowGap={12} w={"100%"}>
                 <Flex
                     w={"100%"}
                     justifyContent={"flex-start"}
