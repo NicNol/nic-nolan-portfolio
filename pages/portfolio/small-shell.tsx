@@ -85,7 +85,6 @@ const SmallShell: NextPage = () => {
                     >
                         <BodyHeading size={"lg"}>Preview</BodyHeading>
                         <Flex direction={"column"} position={"relative"}>
-                            {console.log(terminalImage)}
                             <Box
                                 border={"solid 1px #eee"}
                                 borderRadius={8}
