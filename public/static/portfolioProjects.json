@@ -43,11 +43,32 @@
         "imageSrc": "/images/portfolio/Small-Shell.png"
     },
     {
+        "title": "MockData U.",
+        "tags": [
+            "JavaScript",
+            "React",
+            "Next.js",
+            "Chakra UI",
+            "Node.js",
+            "Faker.js"
+        ],
+        "description": "MockData U. is a website that allows users to mock fake but realistic data related to a college or university. The project is intended for software developers and UI designers of educational software. It allows users to generate data for one or more students, classes, or universities using an API or a GUI.",
+        "link": "/portfolio/mockdata-u",
+        "imageSrc": "/images/portfolio/Mockdata-U-Homepage.png"
+    },
+    {
         "title": "String Primitives",
         "tags": ["x86 Assembly", "MASM"],
         "description": "This is the final project for a course on computer architecture and assembly language. It was programmed using x86 Microsoft Macro Assembler (MASM). The project allows the user to input 10 strings comprised only of digits and optionally a sign (+ or -). The user input is validated and then converted to integer type. All 10 numbers are summed together, converted to a string, and then printed to the user.",
         "link": "/portfolio/string-primitives",
         "imageSrc": "/images/portfolio/String-Primitives.png"
+    },
+    {
+        "title": "Pie Chart Microservice",
+        "tags": ["JavaScript", "Next.js", "Node.js", "Node-canvas", "AWS S3"],
+        "description": "A microservice API that creates an image of a pie chart from user-submitted data. Users submit data via an HTTP POST request and the API returns a JSON response with an image URL of the pie chart that was created from their request.",
+        "link": "/portfolio/pie-chart-microservice",
+        "imageSrc": "/images/portfolio/Pie-Chart.png"
     },
     {
         "title": "Fource",
