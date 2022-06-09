@@ -4,7 +4,7 @@ import HeroBlockMini from "../../components/Hero/HeroBlockMini";
 import PageWrapper from "../../components/PageWrapper";
 import { Alert, AlertIcon, Box, Flex, Tag, Text } from "@chakra-ui/react";
 import Image from "next/image";
-import homeImage from "../../public/images/portfolio/Boeing-Speckle.jpg";
+import homeImage from "../../public/images/portfolio/Boeing-Speckle.png";
 import BodyLink from "../../components/Body/BodyLink";
 import BodyHeading from "../../components/Body/BodyHeading";
 import BodyButton from "../../components/Body/BodyButton";
